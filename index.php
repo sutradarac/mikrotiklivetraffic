@@ -1,53 +1,5 @@
 <?php require('header.php'); ?>
-	<div class="data-table-rows slim">
-                <div class="row mb-1">
-                  <div class="col-sm-12 col-md-5 col-lg-3 col-xxl-2 mb-1">
-                    <h3 class="text-primary mb-0 pb-0">Traffic Interface</h3>
-                    <nav class="breadcrumb-container d-inline-block" aria-label="breadcrumb">
-                      <ul class="breadcrumb pt-0">
-                        <li class="breadcrumb-item"><a href="#">Gtlo</a></li>
-                        <li class="breadcrumb-item"><a href="#">Mikrotik</a></li>
-                        <li class="breadcrumb-item"><a href="#">Traffic Interface</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-
-
-                  <div class="col-sm-12 col-md-7 col-lg-9 col-xxl-10 text-end mb-1">
-                    <div class="d-inline-block me-0 me-sm-3 float-start float-md-none">
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-user"></i>
-                      </button>
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-users"></i>
-                      </button>
-                    </div>
-                    <div class="d-inline-block">
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-list"></i>
-                      </button>
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-coins"></i>
-                      </button>
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-map"></i>
-                      </button>
-                      <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow">
-                        <i class="fa fa-cog"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-        </div>
-        <div class="card shadow hover-scale-up cursor-pointer mb-3">
-			<div class="card-body">
-				<div id="container"></div>
-				<div class="row p-0">
-					<div hidden>
-						<select id="type_interface" name="type_interface">
-							<option value="0" selected>interfaces</option>
-						</select>
-					</div>
+<?php $string = "Cgk8ZGl2IGNsYXNzPSJkYXRhLXRhYmxlLXJvd3Mgc2xpbSI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3cgbWItMSI+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1zbS0xMiBjb2wtbWQtNSBjb2wtbGctMyBjb2wteHhsLTIgbWItMSI+CiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXByaW1hcnkgbWItMCBwYi0wIj5UcmFmZmljIEludGVyZmFjZTwvaDM+CiAgICAgICAgICAgICAgICAgICAgPG5hdiBjbGFzcz0iYnJlYWRjcnVtYi1jb250YWluZXIgZC1pbmxpbmUtYmxvY2siIGFyaWEtbGFiZWw9ImJyZWFkY3J1bWIiPgogICAgICAgICAgICAgICAgICAgICAgPHVsIGNsYXNzPSJicmVhZGNydW1iIHB0LTAiPgogICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImJyZWFkY3J1bWItaXRlbSI+PGEgaHJlZj0iIyI+R3RsbzwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImJyZWFkY3J1bWItaXRlbSI+PGEgaHJlZj0iIyI+TWlrcm90aWs8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJicmVhZGNydW1iLWl0ZW0iPjxhIGhyZWY9IiMiPlRyYWZmaWMgSW50ZXJmYWNlPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvbmF2PgogICAgICAgICAgICAgICAgICA8L2Rpdj4KCgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMTIgY29sLW1kLTcgY29sLWxnLTkgY29sLXh4bC0xMCB0ZXh0LWVuZCBtYi0xIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJkLWlubGluZS1ibG9jayBtZS0wIG1lLXNtLTMgZmxvYXQtc3RhcnQgZmxvYXQtbWQtbm9uZSI+CiAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWljb24gYnRuLWljb24tb25seSBidG4tZm9yZWdyb3VuZC1hbHRlcm5hdGUgc2hhZG93Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhIGZhLXVzZXIiPjwvaT4KICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1pY29uIGJ0bi1pY29uLW9ubHkgYnRuLWZvcmVncm91bmQtYWx0ZXJuYXRlIHNoYWRvdyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJmYSBmYS11c2VycyI+PC9pPgogICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZC1pbmxpbmUtYmxvY2siPgogICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1pY29uIGJ0bi1pY29uLW9ubHkgYnRuLWZvcmVncm91bmQtYWx0ZXJuYXRlIHNoYWRvdyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJmYSBmYS1saXN0Ij48L2k+CiAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImJ0biBidG4taWNvbiBidG4taWNvbi1vbmx5IGJ0bi1mb3JlZ3JvdW5kLWFsdGVybmF0ZSBzaGFkb3ciPgogICAgICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmEgZmEtY29pbnMiPjwvaT4KICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1pY29uIGJ0bi1pY29uLW9ubHkgYnRuLWZvcmVncm91bmQtYWx0ZXJuYXRlIHNoYWRvdyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJmYSBmYS1tYXAiPjwvaT4KICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1pY29uIGJ0bi1pY29uLW9ubHkgYnRuLWZvcmVncm91bmQtYWx0ZXJuYXRlIHNoYWRvdyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJmYSBmYS1jb2ciPjwvaT4KICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImNhcmQgc2hhZG93IGhvdmVyLXNjYWxlLXVwIGN1cnNvci1wb2ludGVyIG1iLTMiPgoJCQk8ZGl2IGNsYXNzPSJjYXJkLWJvZHkiPgoJCQkJPGRpdiBpZD0iY29udGFpbmVyIj48L2Rpdj4KCQkJCTxkaXYgY2xhc3M9InJvdyBwLTAiPgoJCQkJCTxkaXYgaGlkZGVuPgoJCQkJCQk8c2VsZWN0IGlkPSJ0eXBlX2ludGVyZmFjZSIgbmFtZT0idHlwZV9pbnRlcmZhY2UiPgoJCQkJCQkJPG9wdGlvbiB2YWx1ZT0iMCIgc2VsZWN0ZWQ+aW50ZXJmYWNlczwvb3B0aW9uPgoJCQkJCQk8L3NlbGVjdD4KCQkJCQk8L2Rpdj4=";echo base64_decode($string);?>
 					<div class="col-6 float-left col-form-label" id="trafik"></div>
 					<div class="col-6 text-end">
 						<select class="form-select" name="interface" id="interface">
@@ -58,8 +10,6 @@
 							?>
 						</select>
 					</div>
-				</div>
-			</div>
-		</div>
+<?php $string = "CgkJCQk8L2Rpdj4KCQkJPC9kaXY+CgkJPC9kaXY+";echo base64_decode($string);?>
 
 <?php require('footer.php'); ?>

@@ -149,31 +149,4 @@
 		  });
 	  });
 	</script>
-
-
-<footer>
-        <div class="footer-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-6">
-                <p class="mb-0 text-muted text-medium">Sarang ID Dev 2022</p>
-              </div>
-              <div class="col-sm-6 d-none d-sm-block">
-                <ul class="breadcrumb pt-0 pe-0 mb-0 float-end">
-                  <li class="breadcrumb-item mb-0 text-medium">
-                    <a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" target="_blank" class="btn-link">Review</a>
-                  </li>
-                  <li class="breadcrumb-item mb-0 text-medium">
-                    <a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" target="_blank" class="btn-link">Purchase</a>
-                  </li>
-                  <li class="breadcrumb-item mb-0 text-medium">
-                  	<a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" class="btn-link">Docs</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-  	</div>
-  </body>
-</html>
+<?php $string = "Cgo8Zm9vdGVyPgogICAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb250ZW50Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLTEyIGNvbC1zbS02Ij4KICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJtYi0wIHRleHQtbXV0ZWQgdGV4dC1tZWRpdW0iPlNhcmFuZyBJRCBEZXYgMjAyMjwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tNiBkLW5vbmUgZC1zbS1ibG9jayI+CiAgICAgICAgICAgICAgICA8dWwgY2xhc3M9ImJyZWFkY3J1bWIgcHQtMCBwZS0wIG1iLTAgZmxvYXQtZW5kIj4KICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJicmVhZGNydW1iLWl0ZW0gbWItMCB0ZXh0LW1lZGl1bSI+CiAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9hcGkud2hhdHNhcHAuY29tL3NlbmQvP3Bob25lPTYyODIyMjM5Njc2NzYmdGV4dD10cmFmZmljaW50ZXJmYWNlJmFwcF9hYnNlbnQ9MCIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJidG4tbGluayI+UmV2aWV3PC9hPgogICAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImJyZWFkY3J1bWItaXRlbSBtYi0wIHRleHQtbWVkaXVtIj4KICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL2FwaS53aGF0c2FwcC5jb20vc2VuZC8/cGhvbmU9NjI4MjIyMzk2NzY3NiZ0ZXh0PXRyYWZmaWNpbnRlcmZhY2UmYXBwX2Fic2VudD0wIiB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9ImJ0bi1saW5rIj5QdXJjaGFzZTwvYT4KICAgICAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJicmVhZGNydW1iLWl0ZW0gbWItMCB0ZXh0LW1lZGl1bSI+CiAgICAgICAgICAgICAgICAgIAk8YSBocmVmPSJodHRwczovL2FwaS53aGF0c2FwcC5jb20vc2VuZC8/cGhvbmU9NjI4MjIyMzk2NzY3NiZ0ZXh0PXRyYWZmaWNpbnRlcmZhY2UmYXBwX2Fic2VudD0wIiBjbGFzcz0iYnRuLWxpbmsiPkRvY3M8L2E+PC9saT4KICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZm9vdGVyPgogIAk8L2Rpdj4KICA8L2JvZHk+CjwvaHRtbD4=";echo base64_decode($string);?>
