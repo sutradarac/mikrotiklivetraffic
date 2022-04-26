@@ -1,4 +1,26 @@
 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	    <title>Gtlo Interface Graph</title>
+	    <meta name="description" content="Traffic Interface for Gtlo." />
+	    <link rel="shortcut icon" href=favicon.png>
+	    <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="bs-min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/10.0.0/highcharts.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/10.0.0/modules/exporting.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	</head>
+  	<body>
+  		<div class="container pt-2">
+
+
+
 <?php require_once('routeros_api.class.php'); ?>
 
 <?php
@@ -11,10 +33,29 @@
 <?php
 	$API = new RouterosAPI();
 	$API->debug = false;
-	$API->connect($ip_mik, $port_mik, $username_mik, $password_mik);
+	if($API->connect($ip_mik, $port_mik, $username_mik, $password_mik)){		
+		$API->write('/interface/print');
+		$ARRAY = $API->read();
+		$data = $ARRAY; 
+		echo "<script>
+				Swal.fire({
+				  icon: 'success',
+				  title: 'Terhubung',
+				  text: 'Berhasil Terhubung ke Mikrotik',
+				  footer: 'Selamat Menikati Realtime Mikrotik'
+				})
+			  </script>";
+		$ConnectedFlag = true;
+	}
+	else{
+		echo "<script>
+				Swal.fire({
+				  icon: 'error',
+				  title: 'Disconnect',
+				  text: 'Tidak Dapat Terhubung ke Mikrotik',
+				  footer: 'Periksa IP Port Username dan Password'
+				})
+			  </script>";
+	}
  ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<?php $string="PGhlYWQ+DQoJICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04IiAvPg0KCSAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIG1heGltdW0tc2NhbGU9MSIgLz4NCgkgICAgPHRpdGxlPkd0bG8gSW50ZXJmYWNlIEdyYXBoPC90aXRsZT4NCgkgICAgPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IlRyYWZmaWMgSW50ZXJmYWNlIGZvciBHdGxvLiIgLz4gICAgDQoJCTxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGUuY3NzIiAvPg0KCQk8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9ImJzLW1pbi5jc3MiIC8+DQoJCTxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvZm9udC1hd2Vzb21lLzYuMS4xL2Nzcy9hbGwubWluLmNzcyIgLz4NCgkJPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2pxdWVyeS8zLjYuMC9qcXVlcnkubWluLmpzIj48L3NjcmlwdD4NCgkJPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2hpZ2hjaGFydHMvMTAuMC4wL2hpZ2hjaGFydHMubWluLmpzIj48L3NjcmlwdD4NCgkJPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2hpZ2hjaGFydHMvMTAuMC4wL21vZHVsZXMvZXhwb3J0aW5nLm1pbi5qcyI+PC9zY3JpcHQ+DQoJPC9oZWFkPg0KICAJPGJvZHk+DQogIAkJPGRpdiBjbGFzcz0iY29udGFpbmVyIHB0LTIiPg==";echo base64_decode($string);?>

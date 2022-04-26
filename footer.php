@@ -149,4 +149,31 @@
 		  });
 	  });
 	</script>
-<?php $string="PGZvb3Rlcj4NCiAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyLWNvbnRlbnQiPg0KICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPg0KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtMTIgY29sLXNtLTYiPg0KICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJtYi0wIHRleHQtbXV0ZWQgdGV4dC1tZWRpdW0iPlNhcmFuZyBJRCBEZXYgMjAyMjwvcD4NCiAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1zbS02IGQtbm9uZSBkLXNtLWJsb2NrIj4NCiAgICAgICAgICAgICAgICA8dWwgY2xhc3M9ImJyZWFkY3J1bWIgcHQtMCBwZS0wIG1iLTAgZmxvYXQtZW5kIj4NCiAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0iYnJlYWRjcnVtYi1pdGVtIG1iLTAgdGV4dC1tZWRpdW0iPg0KICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL2FwaS53aGF0c2FwcC5jb20vc2VuZC8/cGhvbmU9NjI4MjIyMzk2NzY3NiZ0ZXh0PXRyYWZmaWNpbnRlcmZhY2UmYXBwX2Fic2VudD0wIiB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9ImJ0bi1saW5rIj5SZXZpZXc8L2E+DQogICAgICAgICAgICAgICAgICA8L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJicmVhZGNydW1iLWl0ZW0gbWItMCB0ZXh0LW1lZGl1bSI+DQogICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vYXBpLndoYXRzYXBwLmNvbS9zZW5kLz9waG9uZT02MjgyMjIzOTY3Njc2JnRleHQ9dHJhZmZpY2ludGVyZmFjZSZhcHBfYWJzZW50PTAiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0iYnRuLWxpbmsiPlB1cmNoYXNlPC9hPg0KICAgICAgICAgICAgICAgICAgPC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0iYnJlYWRjcnVtYi1pdGVtIG1iLTAgdGV4dC1tZWRpdW0iPg0KICAgICAgICAgICAgICAgICAgCTxhIGhyZWY9Imh0dHBzOi8vYXBpLndoYXRzYXBwLmNvbS9zZW5kLz9waG9uZT02MjgyMjIzOTY3Njc2JnRleHQ9dHJhZmZpY2ludGVyZmFjZSZhcHBfYWJzZW50PTAiIGNsYXNzPSJidG4tbGluayI+RG9jczwvYT48L2xpPg0KICAgICAgICAgICAgICAgIDwvdWw+DQogICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgPC9kaXY+DQogICAgICAgIDwvZGl2Pg0KICAgICAgPC9mb290ZXI+DQogIAk8L2Rpdj4NCiAgPC9ib2R5Pg0KPC9odG1sPg==";echo base64_decode($string);?>
+
+
+<footer>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <p class="mb-0 text-muted text-medium">Sarang ID Dev 2022</p>
+              </div>
+              <div class="col-sm-6 d-none d-sm-block">
+                <ul class="breadcrumb pt-0 pe-0 mb-0 float-end">
+                  <li class="breadcrumb-item mb-0 text-medium">
+                    <a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" target="_blank" class="btn-link">Review</a>
+                  </li>
+                  <li class="breadcrumb-item mb-0 text-medium">
+                    <a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" target="_blank" class="btn-link">Purchase</a>
+                  </li>
+                  <li class="breadcrumb-item mb-0 text-medium">
+                  	<a href="https://api.whatsapp.com/send/?phone=6282223967676&text=trafficinterface&app_absent=0" class="btn-link">Docs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  	</div>
+  </body>
+</html>

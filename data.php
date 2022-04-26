@@ -2,6 +2,7 @@
 <?php require_once('routeros_api.class.php'); ?>
 
 <?php
+error_reporting(0);
 $ip_mik = "192.168.201.1";
 $port_mik = "8828";
 $username_mik = "read";
@@ -47,24 +48,10 @@ $Type = $_GET["type_interface"];
 					echo $ARRAY['!trap'][0]['message'];	 
 				} 
 			}
-
-
 			$ConnectedFlag = true;
 	}else{
-		echo "
-	<script>
-		Swal.fire({
-		icon: 'error',
-		showconfirmButton: true,
-		title: 'Gagal Masuk',
-		text: 'Periksa Kembali Username dan Password yang Anda Masukkan',
-		confirmButtonText: 'Sensitif Huruf Besar Dan Huruf Kecil',
-		showClass: {
-			popup: 'animated bounceInLeft'},
-		hideClass: {
-			popup: 'animated fadeOutUp'}
-		})
-	</script>";
+		echo "<center><h1>Tidak Dapat Terhubung ke Mikrotik</h1><br>
+			<p>Periksa IP Port Username dan Password</p></center>";
 	}
 
 	if ($ConnectedFlag) {
